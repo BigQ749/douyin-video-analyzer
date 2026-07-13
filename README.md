@@ -325,13 +325,16 @@ cp -r douyin-video-analyzer <你的项目>/.agents/skills/douyin-video-analyzer
 ```
 douyin-video-analyzer/
 │
-├── SKILL.md                   ← 技能主文件（三平台通用）
+├── SKILL.md                   ← 技能主文件（含视频处理 + 开源发布工作流）
 ├── README.md                  ← 本文件
 ├── LICENSE                    ← MIT 开源协议
 ├── .gitignore
 │
 ├── scripts/
 │   └── extract_douyin.py      ← 核心处理脚本（平台无关）
+│
+├── workflows/
+│   └── publish-to-github.md   ← 开源发布完整工作流（七步流程 + 检查清单）
 │
 ├── tests/
 │   └── test_extract.py        ← 单元测试
